@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #d89393;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #logo {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        hr {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        #sub {
+            width: 100%;
+            padding: 12px;
+            background-color: #75e2cb;
+            color: #0c0b0b;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        #res,
+        #can {
+            width: 100%;
+            padding: 12px;
+            background-color: #6c757d;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <img id="logo" src="img/logo.jpg" alt="Logo">
+        </center>
+        <form>
+            <strong>Full Name:</strong>
+            <input id="first" type="text" placeholder="First Name">
+            <input id="middle" type="text" placeholder="Middle Name">
+            <input id="last" type="text" placeholder="Last Name"><br><br>
+            <hr>
+            <strong>E-mail ID:</strong>
+            <input id="e2" type="email" placeholder="example@gmail.com"><br><br><br>
+            <hr>
+            <strong>Password:</strong>
+            <input id="pass1" type="password"><br><br>
+            <strong>Confirm Password:</strong>
+            <input id="pass2" type="password"><br><br>
+            <hr>
+            <strong>Gender:</strong>
+            <br>
+            <input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other<br><br>
+            <hr>
+            <input id="sub" type="button" value="Submit" onclick="subform();"><br><br>
+            
+            <center>
+                <a href="index.html">
+                    <input id="can" type="button" value="Cancel">
+                </a>
+            </center>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</body>
+</html>
